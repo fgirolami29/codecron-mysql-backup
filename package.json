@@ -1,0 +1,49 @@
+{
+  "name": "pytorchia-codecron-mysql-backup",
+  "version": "3.0.1",
+  "description": "Fork of cron-mysql-backup mysqldump + cron + nodemaler , no stupid sendgrid of a shit",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test test/test.js"
+  },
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "**/*.js",
+    "!_STASHED/**"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fgirolami29/codecron-mysql-backup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fgirolami29/codecron-mysql-backup/issues"
+  },
+  "homepage": "https://github.com/fgirolami29/codecron-mysql-backup#readme",
+  "keywords": [
+    "Fork",
+    "of",
+    "cron-mysql-backup",
+    "mysqldump",
+    "+",
+    "cron",
+    "+",
+    "nodemaler",
+    "no",
+    "stupid",
+    "sendgrid",
+    "of",
+    "a",
+    "shit"
+  ],
+  "author": "Federico Girolami",
+  "license": "ISC",
+  "dependencies": {
+    "check-disk-space": "^3.4.0",
+    "mysqldump": "^3.2.0",
+    "node-cron": "^4.1.0",
+    "nodemailer": "^7.0.3"
+  }
+}
